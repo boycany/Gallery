@@ -1,3 +1,7 @@
+var _ = require('lodash');
+
+console.log(_)
+
 const gallery = document.querySelectorAll('.gallery .image')
 const previewbox = document.querySelector('.preview-box')
 // const previewImg = previewbox.querySelector('.openingImg')
