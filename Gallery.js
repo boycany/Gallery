@@ -1,6 +1,12 @@
+//lodash Test
+
 var _ = require('lodash');
 
-console.log(_)
+var array = [1,2,3,4,5,6,7]
+console.log('array without 3:', _.without(array, 3))
+
+
+//正式code
 
 const gallery = document.querySelectorAll('.gallery .image')
 const previewbox = document.querySelector('.preview-box')
@@ -42,7 +48,7 @@ window.onload = ()=>{  //once window loaded
         // }else{
             openPreviewBox(newIndex)
         // }
-        
+        //將Prev和Next用css語法隱藏起來，就不用做這個防呆機制
     })
     closeIcon.addEventListener('click', closePreview)  
      
